@@ -1,0 +1,286 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Header and Navbar */
+header {
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+}
+
+.hero-section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.left-side {
+  max-width: 100%;
+}
+
+.title-hero {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.left-side p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.hero-cta {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-cta:hover {
+  background-color: #333;
+}
+
+/* Information Section */
+.information-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.information-section .title {
+  margin-bottom: 2rem;
+  font-size: 36px;
+}
+
+.information-section h2 {
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.information-section p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f9faf8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-paragraf {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 2rem 1rem;
+  background-color: #e5e7eb;
+  text-align: center;
+}
+
+.testimonials-title {
+  margin-bottom: 2rem;
+}
+
+.testimonials-title h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-title p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: #f9faf8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cta-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.cta-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .left-side {
+    max-width: 60%;
+  }
+
+  .hero-section img {
+    max-width: 30%;
+    margin-top: 0;
+  }
+
+  .card-section {
+    flex-wrap: nowrap;
+  }
+
+  .testimonials-content {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .cta-section {
+    padding: 20px 10px;
+  }
+}
